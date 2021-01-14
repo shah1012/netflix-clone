@@ -1,0 +1,31 @@
+.nav {
+  position: fixed; /* lets the position to top no matter what */
+  top: 0;
+  width: 100%;
+  display: flex; 
+  padding: 20px;
+  height: 30px; /*fixes the height*/
+  z-index: 1; /*bcz of header*/
+
+  transition-timing-function: ease-in; /*adds smooth transition*/
+  transition: all 0.5s; /*adds transition*/
+  justify-content: space-between; /*have space between the objects  NOTE POSITION FIXED DOES NOT GO WITH JUSTIFY CONTENT*/
+}
+
+.nav_black{
+
+    background-color: #111;
+}
+
+.nav_logo {
+  position: fixed;
+  left: 20px; /* to fix the logo*/
+  width: 80px;
+  object-fit: contain; /*fixs images*/
+}
+.nav_avatar{
+    width: 30px;
+    position: fixed;
+    right: 20px;  /*fix the right side*/
+    object-fit: contain;
+}

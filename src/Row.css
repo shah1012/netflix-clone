@@ -1,0 +1,37 @@
+.row{
+  margin-left: 20px; /*spaces it out 20px so its not touching*/
+  color: white;
+}
+
+
+.row_posters {
+  display: flex; /*flexbox*/
+  overflow-y: hidden; /* vertical axis scroll bar hide it*/
+  overflow-x: scroll; /*addes scroll to the x asix*/
+  padding: 20px; /*addes padding (add padding when ever your doing transition*/
+}
+
+.row_posters::-webkit-scrollbar {
+  /*modfiys the scroll bar*/
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain; /* keeps the same ascpet ratio*/
+  width: 100%; /* responsive fits 100% of screen*/
+  max-height: 100px; /* maximum heoght limit*/
+  margin-right: 10px; /* makes the images not touch each other*/
+  transition: transform 450ms; /* if it changes size its going to animate (or do it in a slow way*/
+}
+
+.row_poster:hover {
+  /*what to do when you hover over it*/
+  transform: scale(1.08); /*makes it grow in a smooth way light amout (1.08)*/
+}
+
+.row_posterLarge{
+  max-height: 250px; /*gets bigger height*/
+}
+.row_posterLarge::hover{
+  transform: scale(1.09); /*slightly bigger*/
+}
